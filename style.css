@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Heyam';
+    src: url('images/Heyam.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Daydream';
+    src: url('fonts/Daydream DEMO.otf') format('opentype');
+}
+@font-face {
+    font-family: 'dogica';
+    src: url('fonts/dogica.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+html {
+    font-size: 70%;
+}
+
+h1{
+    font-family: 'Heyam';
+    font-size: 9rem;
+    margin: 0.5rem;
+}
+h2{
+    font-family: 'Heyam';
+    margin: 0.5rem;
+}
+h3{
+    font-family: 'Heyam';
+    margin: 0.5rem;
+}
+p{
+    font-family: 'dogica', sans-serif;
+    font-size: 1rem;
+    margin: 0.5rem;
+    line-height: 2rem;
+}
+body{
+    background-image: url(images/main_menu.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center;
+    font-size: 3rem;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+    
+}
+
+.modal-header {
+  cursor: move; /* Changes cursor to a 'move' icon */
+  padding: 10px;
+  background-color: transparent
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: transparent;
+  color: rgb(151, 83, 140);
+  margin: 10% auto; /* 10% from the top and centered */
+  padding: 20px;
+  width: 60%; 
+  height: 65%;
+  max-width: 90%;
+  max-height: 90%;
+  /* Could be more or less, depending on screen size */
+   /* ... fixed size properties ... */
+  overflow-y: auto; /* Adds a vertical scrollbar when needed */
+  /* OR */
+  overflow: auto; /* Adds both horizontal and vertical scrollbars when needed */
+}
+
+
+/* The Close Button */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.open-modal-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.open-modal-btn img {
+    width: 20rem;
+}
+
+.aboutMe-content {
+    display: block;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius:5px;
+}
+
+/* Hide all tab content by default */
+.tab-content {
+  display: none;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  border-radius:5px;
+
+}
+
+/* Show the active tab content */
+.tab-content.active {
+  display: block;
+  background-color: #f1f1f1;
+}
+
+/* Style for the tab buttons */
+.tab-btn {
+  background-color: #f1f1f1;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 35px 40px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  font-family: dogica;
+
+}
+
+/* Style for the active tab button */
+.tab-btn.active {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.img-gallery {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.img-gallery a {
+    display: flex;
+    text-decoration: none;
+}
+
+.img-gallery img {
+    max-width: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.img-gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
