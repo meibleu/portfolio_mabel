@@ -14,33 +14,122 @@
       </header>
           <h2>hi!</h2>
           <h1>it's Mabel</h1>
-          <p>i'm an illustrator, graphic designer, and an aspiring front end dev</p>
+          <h5>i'm an illustrator, graphic designer, and an aspiring front end developer.</h5>
 <button class="open-modal-btn" data-target="aboutMe"><img src="images/about_me1.png"></button>
 <div id="aboutMe" class="modal">
 <div class="modal-content">
   <span class="close-btn">&times;</span>
   <div id="aboutMe-content" class="aboutMe-content">
   <h2>About me!</h2>
-  <p></p>
+  <img src="images/bleu.png" alt="bleuProfilePic">
+  <p>Hi! I'm Mabel Lynn, also known as "bleu" in the art and gaming community. I started off as an illustrator and graphic designer, but I've recently been diving into web development and UI/UX design.<hr>
+  <p>I'm currently a student pursuing a degree in Computer Science. While I'm still learning, I'm excited to apply my skills in creating engaging digital experiences. 
+Gaming being my main passion, I love combining my artistic background with my technical skills to design user-friendly interfaces and visually appealing websites.</p>
+  <p>In my free time, I enjoy playing video games, creating digital art, and exploring new technologies in web development. I'm always eager to take on new challenges and collaborate on projects that allow me to grow both as a developer and an artist.</p>
+
+
+
+</p>
   </div>
 </div>
 </div>
-
-<button class="open-modal-btn" data-target="works"><img src="images/button1.png"></button>
-<div id="works" class="modal">
-<div class="modal-content">
-  <div class="modal-header">
-<span class="close-btn">&times;</span>
+<div id="works-button" class="works-button">
+<a href="#works" class="scroll-link">
+      <img src="images/button1.png" alt="Go to Works">
+    </a>
 </div>
-<div class="tab-container">
-  <button class="tab-btn active" data-tab-id="illu">Illustrations</button>
-  <button class="tab-btn" data-tab-id="projects">Projects</button>
-  <button class="tab-btn" data-tab-id="gdesign">Graphic Design</button>
+<button class="open-modal-btn" data-target="skills"><img src="images/skills_btn.png"></button>
+<div id="skills" class="modal">
+<div class="modal-content">
+  <span class="close-btn">&times;</span>
+   <div id="skills-content" class="skills-content">
+  <h2>Skills</h2>
+  <h4>Languages</h4>
+  <div class="skills-gallery">
+      <img src="images/skills/html.png" alt="html">
+      <img src="images/skills/css.png" alt="css">
+      <img src="images/skills/JavaScript-logo.png" alt="js">
+      <img src="images/skills/JAVA.png" alt="java">
+  </div>
+  <hr>
+  <h4>Frameworks & Libraries</h4>
+  <div class="skills-gallery">
+      <img src="images/skills/Bootstrap.png" alt="bootstrap">
+      <img src="images/skills/react.png" alt="react">
+  </div>
+  <hr>
+  <h4>Tools & Platforms</h4>
+  <div class="skills-gallery">
+      <img src="images/skills/git.png" alt="git">
+      <img src="images/skills/github.png" alt="github">
+      <img src="images/skills/vscode.png" alt="vs_code">
+      <img src="images/skills/figma.png" alt="figma">
+      <img src="images/skills/wordpress.png" alt="wordpress">
+      <img src="images/skills/adobecc.png" alt="adobe cc">
+      <img src="images/skills/psd.png" alt="photoshop">
+      <img src="images/skills/adobeai.png" alt="illustrator">
+      <img src="images/skills/indesign.jpg" alt="indesign">
+      <img src="images/skills/adobeae.png" alt="after effects">
+      <img src="images/skills/canva.png" alt="canva">
+      <img src="images/skills/google.png" alt="google workspace">
+      <img src="images/skills/microsoft.png" alt="microsoft office">
+  </div>
+</div></div></div><div>
+<div class="socials-icons">
+  <a href="https://www.instagram.com/meibleu/"><img src="images/socials/socials_instagram.png" alt="Instagram"></a>
+<a href="https://github.com/meibleu"><img src="images/socials/socials_github.png" alt="GitHub"></a>
+<a href="https://www.linkedin.com/in/mabel-lynn-566761335/"><img src="images/socials/socials_linkedin.png" alt="LinkedIn"></a>
+ 
+</div>
+</div>
+  </section>
+
+  <section id="works" class="works-section">
+    <div class="container">
+      
+      <div class="section-header">
+        <a href="index.html"><img src ="images/home.png" alt="home icon" style="width:4rem; vertical-align: middle;margin-bottom:2rem;"></a>
+        <p style="color:white">Here are some of my illustrations and graphic design works!</p>
+        
+      </div>
+      <hr>
+
+      <div class="tab-container">
+        <button class="tab-btn active" data-tab-id="illu">Illustrations</button>
+        <button class="tab-btn" data-tab-id="projects">TFT Client</button>
+        <button class="tab-btn" data-tab-id="weather">Weather Site</button>
+      </div>
+      <div id="projects" class="tab-content">
+  <h3 style="color:rgb(73, 132, 180);">(Work in Progress) <br>Teamfight Tactics Client</h3>
+  <p>After analyzing the existing client, I identified several key usability issues that drove the direction of this redesign:</p>
+<br>
+<p><b>Storage Efficiency:</b> The requirement to install the entire League of Legends game ecosystem creates unnecessary storage bloat for users who exclusively play Teamfight Tactics.
+</p><hr> 
+<p><b>Asset Visualization:</b> There is no functionality to view high-resolution or enlarged details of cosmetic assets.
+</p><hr>
+<p><b>Lobby Layout:</b> The current split-layout places players on opposite sides of the screen. This visual hierarchy increases cognitive load, making it difficult to track player status at a glance.</p>
+<img src="images/tft images/LandingPageTFT.png" alt="TFT Landing Page">
+<p>Key Design Decisions:</p><br>
+<p>Standalone Application: Developed a dedicated TFT environment by stripping away non-essential League of Legends elements to reduce cognitive load.
+</p><hr>
+<p>Social Consistency: Preserved the legacy Friend List layout to maintain user familiarity and ease of access.</p>
+<hr>
+<p>Enhanced Navigation: Relocated primary tabs to a vertical left-hand sidebar with increased font weight, adopting a modern UI standard similar to the Valorant home screen.</p>
+<hr>
+<p>Mobile Parity: Mirrored the mobile client’s layout for the Battlepass and "Objectives" to create a unified experience across platforms.</p>
+<hr>
+<p>Engagement Optimization: Utilized available viewport space to showcase "Treasure Realm" cosmetics, increasing visibility for in-game content.</p>
+<br>
+<img src="images/tft images/CollectionTFT.png" alt="Collection1">
+<img src="images/tft images/CollectionTFT2.png" alt="Collection2">
+<img src="images/tft images/LobbyTFT.png" alt="Lobby">
+
 </div>
 
 <div id="illu" class="tab-content active">
   <h3>Illustrations</h3>
-  <p>This is the content that appears when Tab 1 is active.</p>
+  <p>Digital Illustrations of fan art of different characters from different franchises. <br> <b>Made using: Clip Studio Paint, Photoshop, Procreate</b></p>
+
   <div class="img-gallery">
       <img src="images/illusts/gwen.png" alt="gwen">
       <img src="images/illusts/jodi.png" alt="jodi">
@@ -68,21 +157,29 @@
 
 </div>
 
-<div id="projects" class="tab-content">
-  <h3>(Work in Progress) Teamfight Tactics Client Reimagined</h3>
-  <p></p>
-</div>
-
-<div id="gdesign" class="tab-content">
-  <h3>Content for Tab 3</h3>
-  <p>This is the content that appears when Tab 3 is active.</p>
-</div>
 
 
+<div id="weather" class="tab-content">
+  <h3>Weather Site</h3>
+  <a href="https://meibleu.github.io/bleus-weathersite/" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 2rem; 
+    color: rgb(143, 118, 255);">https://meibleu.github.io/bleus-weathersite/</a>
+  <p>A simple weather site built with HTML, CSS, and JavaScript.</p><hr>
+  <ul>
+    <li>Learn how to integrate API data into a web application.</li>
+    <li>Change the UI of the webpage depending on the data fetched.</li>
+  </ul>
+  <img src="images/WeatherApp_default.png" alt="weather app default">
+  <img src="images/Weather_conditionClear.png" alt="weather app clear">
+  <img src="images/Weather_conditionCloudy.png" alt="weather app cloudy">
 </div>
-</div></div>
-  </section>
-<script src="index.js"></script>"
+
+
+</div>
+</div>
+</section>
+
+<script src="index.js"></script>
 
 </body>
 </html>
